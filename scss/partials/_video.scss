@@ -1,7 +1,30 @@
 ///////// Work Page /////////
+
 main.video-page .container{
-  display: block;
+  display: flex;
 }
+  .col-1, .col-2 {
+    margin-bottom: 1em;
+    flex: 1;
+  }
+
+  .col-1 {
+
+    @include respond-to(medium-plus) {
+      flex: 1;
+      margin-right: 4em;
+    }
+  }
+
+  .col-2 {
+    @include respond-to(medium-plus) {
+      flex: 3;
+    }
+
+    h2 {
+      text-align: center;
+    }
+  }
 
 .work-container {
   margin-bottom: 2em;
