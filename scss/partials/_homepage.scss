@@ -1,0 +1,68 @@
+nav.home-page-nav {
+  @include respond-to(medium-plus) {
+    display: none;
+  }
+}
+
+div.marquee-container {
+  min-height: 250px;
+  display: flex;
+  flex-flow: row nowrap;
+
+  .marquee-left {
+    flex: 1;
+    margin-right: -200px;
+    background-color: $base-color;
+    clip-path: polygon(0 100%, 0 0, 100% 0, 90% 100%);
+    padding: 8em 0;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    .name-container h1 {
+      line-height: 1em;
+      font-size: 4em;
+    }
+  }
+
+  .marquee-right {
+    flex: 1;
+    background-image: url('/images/matt_aubin015.jpg');
+    background-size: cover;
+  }
+}
+
+
+main.home-page .container {
+  flex-flow: column nowrap;
+
+  @include respond-to(medium-plus) {
+    flex-flow: row wrap;
+    max-width: 980px;
+  }
+
+  .col-1, .col-2 {
+    margin-bottom: 1em;
+    flex: 1;
+  }
+
+  .col-1 {
+
+    @include respond-to(medium-plus) {
+      flex: 3;
+      margin-right: 4em;
+    }
+  }
+
+  .col-2 {
+    @include respond-to(medium-plus) {
+      flex: 1;
+    }
+
+    h2 {
+      text-align: center;
+    }
+  }
+}
