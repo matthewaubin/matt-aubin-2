@@ -14,7 +14,7 @@ div.marquee-container {
     margin-right: -200px;
     background-color: $base-color;
     clip-path: polygon(0 100%, 0 0, 100% 0, 90% 100%);
-    padding: 8em 0;
+
 
     display: flex;
     flex-flow: row nowrap;
@@ -22,15 +22,24 @@ div.marquee-container {
     align-items: center;
 
     .name-container h1 {
+      padding: 1em 0;
       line-height: 1em;
       font-size: 4em;
     }
   }
 
+  // .marquee-left:after {
+  //   clip-path: polygon(0 100%, 0 0, 100% 0, 90% 100%);
+  //   background-color: #000000;
+  //   content: "";
+  //   position: absolute;
+  // }
+
   .marquee-right {
     flex: 1;
     background-image: url('/images/matt_aubin015.jpg');
-    background-size: cover;
+    background-size: 1000px auto;
+    background-position-x: -180px;
   }
 }
 

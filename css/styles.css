@@ -382,7 +382,6 @@ div.marquee-container .marquee-left {
   background-color: #E3462B;
   -webkit-clip-path: polygon(0 100%, 0 0, 100% 0, 90% 100%);
           clip-path: polygon(0 100%, 0 0, 100% 0, 90% 100%);
-  padding: 8em 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -400,6 +399,7 @@ div.marquee-container .marquee-left {
           align-items: center; }
 
 div.marquee-container .marquee-left .name-container h1 {
+  padding: 1em 0;
   line-height: 1em;
   font-size: 4em; }
 
@@ -409,7 +409,8 @@ div.marquee-container .marquee-right {
       -ms-flex: 1;
           flex: 1;
   background-image: url('/images/matt_aubin015.jpg');
-  background-size: cover; }
+  background-size: 1000px auto;
+  background-position-x: -180px; }
 
 main.home-page .container {
   -webkit-flex-flow: column nowrap;
