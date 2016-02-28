@@ -1,14 +1,14 @@
 nav {
   //position: fixed;
-  padding: 1.5em 0 0 0;
+  padding: 1.5em 0 0 0; //this prob needs to be changed to 1.85em
   width: 100%;
-  //background-color: #ffffff;
-  background-color: $base-color;
+  background-color: #ffffff;
+  //background-color: $base-color;
   //box-shadow: 0 2px 8px 0 rgba(0,0,0,0.1),0 -5px 3px -10px #fff;
   box-shadow: 0 2px 8px 0 rgba(0,0,0,0.5),0 -5px 3px -10px #fff;
 
   h1 a, .menu a {
-    color: #FFFFFF;
+    color: #000000;
   }
 
   @include respond-to(small) {
@@ -17,7 +17,7 @@ nav {
 
   @include respond-to(medium-plus) {
     position: fixed;
-    padding: 1.5em 0;
+    padding: 1.85em 0;
     // background-color: #ffffff;
     z-index: 1000;
   }

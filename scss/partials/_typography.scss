@@ -1,21 +1,23 @@
-$display: 'Josefin Sans', 'Open Sans', sans-serif;
-$code: 'Source Code Pro', 'monospace';
+// $display: 'Josefin Sans', 'Open Sans', sans-serif;
+$display: 'ltc-bodoni-175', serif;
+//$body: 'pt-sans', 'Open Sans', sans-serif;
+$body: 'proxima-nova', 'Open Sans', sans-serif;
 
 body {
   font-size: 18px; // 18px
   line-height: 1.25em;
   font-family: $display;
   // font-weight: 300;
-  font-weight: 600;
+  //font-weight: 600;
 }
 
 nav h1 {
-  font-size: 1.75em; //31.5px = 1.75em
+  font-size: 2.5em; //31.5px = 1.75em
   font-family: $display;
   text-transform: uppercase;
   letter-spacing: 3px;
   // font-weight: 400;
-  font-weight: 700;
+  //font-weight: 700;
 }
 
 main h1 {
@@ -24,31 +26,34 @@ main h1 {
   text-transform: uppercase;
   letter-spacing: 3px;
   margin: 0 auto 1em;
-  font-style: italic;
+  //font-style: italic;
   // font-weight: 400;
-  font-weight: 600;
+  //font-weight: 600;
 }
 
 h2 {
-  font-family: $display;
+  font-family: $body;
   font-style: italic;
   font-size: 1.25em;
   line-height: 1.25em;
   padding-top: 0.6em;
   padding-bottom: 1em;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 h3 {
   font-family: $display;
   font-size: 1.1em;
-  font-weight: 700;
+  //font-weight: 700;
   text-transform: uppercase;
 }
 
 main {
   //font-size: 18px;
+  font-size: 0.75em;
   letter-spacing: 0.75px;
+  font-family: $body;
+  font-weight: 300;
 }
 
 nav .menu {
@@ -67,10 +72,6 @@ footer .credit {
   font-style: italic;
 }
 
-code {
-  font-family: $code;
-}
-
 .drop-cap {
   // font-size: 4.25em;
   // float: left;
@@ -81,4 +82,8 @@ code {
       float: left;
       line-height: 40px;
       margin-top: 4px;
+}
+
+.sm-caps {
+  font-size: 0.75em;
 }

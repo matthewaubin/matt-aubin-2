@@ -1,32 +1,40 @@
 nav.home-page-nav {
   @include respond-to(medium-plus) {
-    display: none;
+    background-color: rgba(0,0,0,0);
+    box-shadow: none;
   }
 }
 
 div.marquee-container {
-  min-height: 250px;
+  min-height: 450px;
   display: flex;
   flex-flow: row nowrap;
+  background-image: url('../images/matt_aubin083.jpg');
+  background-size: cover;
+  background-position-y: -225px;
+  background-repeat: no-repeat;
 
-  .marquee-left {
-    flex: 1;
-    margin-right: -200px;
-    background-color: $base-color;
-    clip-path: polygon(0 100%, 0 0, 100% 0, 90% 100%);
+  // .marquee-left {
+  //   flex: 1;
+  //   margin-right: -200px;
+  //   background: $base-color;
+  //   background: linear-gradient(to right, $base-color, rgba(0,0,0,0));
+  //   //clip-path: polygon(0 100%, 0 0, 100% 0, 90% 100%);
 
 
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
 
-    .name-container h1 {
-      padding: 2em 0;
-      line-height: 1em;
-      font-size: 4em;
-    }
-  }
+
+  //   display: flex;
+  //   flex-flow: row nowrap;
+  //   justify-content: center;
+  //   align-items: center;
+
+  //   .name-container h1 {
+  //     padding: 2em 0;
+  //     line-height: 1em;
+  //     font-size: 4em;
+  //   }
+  // }
 
   // .marquee-left:after {
   //   clip-path: polygon(0 100%, 0 0, 100% 0, 90% 100%);
@@ -35,12 +43,12 @@ div.marquee-container {
   //   position: absolute;
   // }
 
-  .marquee-right {
-    flex: 1;
-    background-image: url('../images/matt_aubin015.jpg');
-    background-size: 1000px auto;
-    background-position-x: -180px;
-  }
+  // .marquee-right {
+  //   flex: 1;
+  //   background-image: url('../images/matt_aubin015.jpg');
+  //   background-size: 1000px auto;
+  //   background-position-x: -180px;
+  // }
 }
 
 

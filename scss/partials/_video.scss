@@ -24,7 +24,7 @@ main.video-page .container{
 
   .col-2 {
     @include respond-to(medium-plus) {
-      flex: 3;
+      flex: 2;
     }
 
     h2 {

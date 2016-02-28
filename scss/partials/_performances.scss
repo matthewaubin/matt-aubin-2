@@ -24,22 +24,33 @@ main.performances-page .container{
 
   .col-2 {
     @include respond-to(medium-plus) {
-      flex: 1;
+      flex: 2;
     }
 
     // h2 {
     //   text-align: center;
     // }
   }
+
+  .little-block {
+    content: " ";
+    width: 30px;
+    height: 10px;
+    background-color: $secondary-color;
+    display: block;
+    margin: 0 auto 22px auto;
+  }
 }
 
 .container.narrow {
-  max-width: 700px;
+  //max-width: 700px;
 
   .col-1 {
     text-align: right;
   }
 }
+
+
 
 .container.alternate {
   $border-width: 4px;
@@ -85,11 +96,9 @@ main.performances-page .container{
 
   }
 
-  .performance-location {
-
-  }
-
   .performance-group {
-
+    h2 {
+      padding-top: 0;
+    }
   }
 }
