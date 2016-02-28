@@ -7,6 +7,10 @@ nav {
   //box-shadow: 0 2px 8px 0 rgba(0,0,0,0.1),0 -5px 3px -10px #fff;
   box-shadow: 0 2px 8px 0 rgba(0,0,0,0.5),0 -5px 3px -10px #fff;
 
+  h1 a, .menu a {
+    color: #FFFFFF;
+  }
+
   @include respond-to(small) {
     margin-bottom: 21px;
   }
