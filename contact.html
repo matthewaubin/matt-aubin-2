@@ -4,10 +4,15 @@
     <title>Matthew Aubin | Matthew Aubin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
+    <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:600,600italic,700,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- JavaScripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
   </head>
 
   <body>
@@ -34,12 +39,24 @@
 
 
       <div class="container narrow"> <!-- each container will hold each performance event -->
-        <form action="//formspree.io/your@email.com"
+        <form id="contact-form" action="//formspree.io/matthewhornblower@gmail.com"
               method="POST">
-            <input type="text" name="name">
-            <input type="email" name="_replyto">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required placeholder="Name">
+            <label for="message">Message</label>
+            <textarea type="text" name="message" id="message" required placeholder="Message"></textarea>
+            <label for="email">E-Mail Address</label>
+            <input type="email" name="_replyto" id="email" required placeholder="E-Mail">
+            <input type="hidden" name="_next" value="/contact.html" />
+            <input type="text" name="_gotcha" style="display:none" />
             <input type="submit" value="Send">
         </form>
+        <div id="success">
+          <p>Thanks for your note.  I'll be in touch soon.</p>
+        </div>
+        <div id="error">
+          <p>Huh, looks like there was a problem with the form.  Please try again.</p>
+        </div>
       </div> <!-- end of .container -->
 
     </main>

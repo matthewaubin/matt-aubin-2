@@ -587,3 +587,23 @@ main.performances-page .container .col-1, main.performances-page .container .col
             flex: 1;
     margin-right: 4em;
     max-width: 406px; } }
+
+main.contact-page .container.narrow {
+  max-width: 600px; }
+
+main.contact-page form {
+  width: 100%; }
+
+main.contact-page form > * {
+  display: block;
+  width: 100%; }
+
+main.contact-page form input {
+  margin-bottom: 2em; }
+
+main.contact-page form textarea {
+  margin: 0 0 2em 0;
+  height: 150px; }
+
+main.contact-page form input[type=text], main.contact-page form input[type=email], main.contact-page form textarea {
+  padding: 0.5em 1em; }

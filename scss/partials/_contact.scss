@@ -1,0 +1,27 @@
+main.contact-page {
+  .container.narrow {
+    max-width: 600px;
+  }
+  form {
+    width: 100%;
+    > * {
+      display: block;
+      width: 100%;
+    }
+
+    input {
+      margin-bottom: 2em;
+    }
+
+    textarea {
+      margin: 0 0 2em 0;
+      height: 150px;
+    }
+
+    input[type=text], input[type=email], textarea {
+      padding: 0.5em 1em;
+    }
+
+
+  }
+}
