@@ -24,10 +24,19 @@ $(document).ready(function() {
   //Scroll-spy
   var controller = new ScrollMagic.Controller({loglevel: 3});
 
-  var scene = new ScrollMagic.Scene({triggerElement: ".marquee-container", duration: 450})
+  var scene = new ScrollMagic.Scene({triggerElement: ".home-page", duration: 150})
     // animate color and top border in relation to scroll position
-    .setTween("nav", {background-color: "#ffffff", box-shadow: "0 2px 8px 0 rgba(0,0,0,0.5),0 -5px 3px -10px #fff"}) // the tween durtion can be omitted and defaults to 1
+    .setTween("nav", {backgroundColor: "#ffffff", boxShadow: "0 2px 8px 0 rgba(0,0,0,0.5),0 -5px 3px -10px #fff"}) // the tween durtion can be omitted and defaults to 1
+    //.addIndicators({name: "1 (duration: 450)"}) // add indicators (requires plugin)
     .addTo(controller);
 
 
 });
+
+// var controller = new ScrollMagic.Controller({loglevel: 3});
+
+// var scene = new ScrollMagic.Scene({triggerElement: ".marquee-container", duration: 450})
+//   // animate color and top border in relation to scroll position
+//   .setTween("nav", {backgroundColor: "#ffffff", boxShadow: "0 2px 8px 0 rgba(0,0,0,0.5),0 -5px 3px -10px #fff"}) // the tween durtion can be omitted and defaults to 1
+//   .addIndicators({name: "2 (duration: 450)"}) // add indicators (requires plugin)
+//   .addTo(controller);
