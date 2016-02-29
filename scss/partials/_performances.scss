@@ -1,3 +1,17 @@
+nav.performances-nav {
+  color: #FFFFFF;
+}
+
+nav.performances-nav h1 a, nav.performances-nav .menu a {
+  @include respond-to(medium-plus) {
+    color: inherit;
+  }
+}
+
+div.marquee-container.performances-page-marquee {
+  background-image: url('../images/matt_aubin124-1.jpg');
+}
+
 main.performances-page .container, .container.narrow{
   display: flex;
   flex-flow: column nowrap;
@@ -13,11 +27,12 @@ main.performances-page .container, .container.narrow{
   }
 
   .col-1 {
-    text-align: right;
+
 
     @include respond-to(medium-plus) {
+      text-align: right;
       flex: 1;
-      //margin-right: 4em;
+      margin-right: 4em;
     }
   }
 

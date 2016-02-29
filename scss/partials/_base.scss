@@ -25,7 +25,7 @@ main {
   //margin-bottom: 23px;
 
   @include respond-to(medium-plus) {
-    padding-top: 155px;
+    padding-top: 10px;
   }
 }
 
@@ -37,7 +37,7 @@ main > .container {
   }
 }
 
-img {
+img, svg {
   width: 100%;
 }
 

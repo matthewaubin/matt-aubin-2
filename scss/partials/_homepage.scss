@@ -5,53 +5,33 @@ nav.home-page-nav {
   }
 }
 
-div.marquee-container {
-  min-height: 450px;
-  display: flex;
-  flex-flow: row nowrap;
-  background-image: url('../images/matt_aubin083.jpg');
-  background-size: cover;
-  background-position-y: -225px;
-  background-repeat: no-repeat;
-
-  // .marquee-left {
-  //   flex: 1;
-  //   margin-right: -200px;
-  //   background: $base-color;
-  //   background: linear-gradient(to right, $base-color, rgba(0,0,0,0));
-  //   //clip-path: polygon(0 100%, 0 0, 100% 0, 90% 100%);
-
-
-
-
-  //   display: flex;
-  //   flex-flow: row nowrap;
-  //   justify-content: center;
-  //   align-items: center;
-
-  //   .name-container h1 {
-  //     padding: 2em 0;
-  //     line-height: 1em;
-  //     font-size: 4em;
-  //   }
-  // }
-
-  // .marquee-left:after {
-  //   clip-path: polygon(0 100%, 0 0, 100% 0, 90% 100%);
-  //   background-color: #000000;
-  //   content: "";
-  //   position: absolute;
-  // }
-
-  // .marquee-right {
-  //   flex: 1;
-  //   background-image: url('../images/matt_aubin015.jpg');
-  //   background-size: 1000px auto;
-  //   background-position-x: -180px;
-  // }
+div.marquee-container.home-page-marquee {
+  background-image: url('../images/matt_aubin083-1.jpg');
 }
 
 
 main.home-page {
-  padding-top: 100px;
+  //padding-top: 100px;
+
+  .container.logos {
+    flex-flow: column nowrap;
+    @include respond-to(medium-plus) {
+      flex-flow: row nowrap;
+    }
+
+    .fbd-logo {
+      @include respond-to(medium-plus) {
+        flex: 4;
+      }
+    }
+    .tcs-logo-container {
+      flex: 1;
+      margin: 0 auto;
+      width: 30%;
+      @include respond-to(medium-plus) {
+        margin: 0 auto;
+      }
+
+    }
+  }
 }

@@ -1,4 +1,16 @@
-///////// Work Page /////////
+nav.video-nav {
+  color: #FFFFFF;
+}
+
+nav.video-nav h1 a, nav.video-nav .menu a {
+  @include respond-to(medium-plus) {
+    color: inherit;
+  }
+}
+
+div.marquee-container.video-page-marquee {
+  background-image: url('../images/matt_aubin128-1.jpg');
+}
 
 main.video-page .container{
   display: flex;

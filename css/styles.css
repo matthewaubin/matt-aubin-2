@@ -67,7 +67,7 @@ main {
 
 @media screen and (min-width: 851px) {
   main {
-    padding-top: 155px; } }
+    padding-top: 10px; } }
 
 main > .container {
   margin: 0 22px; }
@@ -77,7 +77,7 @@ main > .container {
     max-width: 980px;
     margin: auto; } }
 
-img {
+img, svg {
   width: 100%; }
 
 body {
@@ -89,14 +89,19 @@ nav h1 {
   font-size: 2.5em;
   font-family: 'ltc-bodoni-175', serif;
   text-transform: uppercase;
-  letter-spacing: 3px; }
+  letter-spacing: 3px;
+  text-align: center; }
+
+@media screen and (max-width: 850px) {
+  nav h1 {
+    line-height: 1em; } }
 
 main h1 {
   font-size: 1.75em;
   font-family: 'ltc-bodoni-175', serif;
   text-transform: uppercase;
   letter-spacing: 3px;
-  margin: 0 auto 3em; }
+  margin: 3em auto 3em; }
 
 h2 {
   font-family: 'proxima-nova', 'Open Sans', sans-serif;
@@ -148,15 +153,13 @@ nav {
 nav h1 a, nav .menu a {
   color: #000000; }
 
-@media screen and (max-width: 850px) {
-  nav {
-    margin-bottom: 21px; } }
-
 @media screen and (min-width: 851px) {
   nav {
     position: fixed;
     padding: 1.85em 0;
-    z-index: 1000; } }
+    z-index: 1000;
+    background-color: transparent;
+    box-shadow: none; } }
 
 nav .container {
   -webkit-flex-flow: column nowrap;
@@ -226,65 +229,25 @@ nav .menu ul li {
   nav .menu ul li:last-of-type {
     margin-left: 0px; } }
 
-main .container {
-  padding-bottom: 1em; }
-
-div.project {
-  width: 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  padding-top: 56.25%;
-  position: relative;
-  margin-bottom: 30px;
-  border: solid rgba(0, 0, 0, 0.2) 1px; }
-
-div.project a.title-container {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  color: #FFFFFF;
+div.marquee-container {
+  min-height: 450px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  box-shadow: inset 0 0 0 1000px transparent;
-  -webkit-transition: box-shadow 0.5s;
-          transition: box-shadow 0.5s; }
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
 
-div.project a.title-container div.title {
-  font-size: 3em;
-  font-style: italic;
-  text-transform: uppercase;
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: visibility 0.5s, opacity 0.5s linear;
-          transition: visibility 0.5s, opacity 0.5s linear; }
+@media screen and (min-width: 851px) {
+  div.marquee-container {
+    min-height: 550px; } }
 
-div.project a.title-container:hover {
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.65); }
-
-div.project a.title-container:hover div.title {
-  visibility: visible;
-  opacity: 1; }
-
-.blog-post {
-  margin-bottom: 1.5em; }
-
-.blog-post h3 {
-  margin-bottom: 6px; }
-
-.blog-link {
-  font-style: italic;
-  font-size: 0.85em; }
+main .container {
+  padding-bottom: 1em; }
 
 footer {
   background-color: #F0B430;
@@ -321,65 +284,53 @@ footer .container .social a:hover {
 footer .container .social > * {
   margin-left: 0.5em; }
 
-code {
-  border: solid rgba(0, 0, 0, 0.5) 1px;
-  padding: 0.25em; }
-
-pre code {
-  margin: 1em;
-  padding: 0.75em;
-  display: block; }
-
-.col-1, .col-2 {
-  margin-bottom: 1em; }
-
-@media screen and (min-width: 851px) {
-  .col-1, .col-2 {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-        -ms-flex: 1;
-            flex: 1; } }
-
-@media screen and (min-width: 851px) {
-  .col-1 {
-    margin-right: 2em; } }
-
-main.about-page .col-1 {
-  -webkit-align-self: center;
-      -ms-flex-item-align: center;
-          align-self: center; }
-
-main.blog-list .container {
-  -webkit-flex-flow: column nowrap;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap; }
-
-.project-image {
-  padding-bottom: 18px;
-  margin-bottom: 18px;
-  border-bottom: solid rgba(0, 0, 0, 0.25) 1px; }
-
 @media screen and (min-width: 851px) {
   nav.home-page-nav {
     background-color: transparent;
     box-shadow: none; } }
 
-div.marquee-container {
-  min-height: 450px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row nowrap;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  background-image: url('../images/matt_aubin083.jpg');
-  background-size: cover;
-  background-position-y: -225px;
-  background-repeat: no-repeat; }
+div.marquee-container.home-page-marquee {
+  background-image: url('../images/matt_aubin083-1.jpg'); }
 
-main.home-page {
-  padding-top: 100px; }
+main.home-page .container.logos {
+  -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap; }
+
+@media screen and (min-width: 851px) {
+  main.home-page .container.logos {
+    -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap; } }
+
+@media screen and (min-width: 851px) {
+  main.home-page .container.logos .fbd-logo {
+    -webkit-box-flex: 4;
+    -webkit-flex: 4;
+        -ms-flex: 4;
+            flex: 4; } }
+
+main.home-page .container.logos .tcs-logo-container {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0 auto;
+  width: 30%; }
+
+@media screen and (min-width: 851px) {
+  main.home-page .container.logos .tcs-logo-container {
+    margin: 0 auto; } }
+
+nav.video-nav {
+  color: #FFFFFF; }
+
+@media screen and (min-width: 851px) {
+  nav.video-nav h1 a, nav.video-nav .menu a {
+    color: inherit; } }
+
+div.marquee-container.video-page-marquee {
+  background-image: url('../images/matt_aubin128-1.jpg'); }
 
 main.video-page .container {
   display: -webkit-box;
@@ -440,6 +391,16 @@ main.video-page .container .col-2 h2 {
   width: 100%;
   height: 100%; }
 
+nav.performances-nav {
+  color: #FFFFFF; }
+
+@media screen and (min-width: 851px) {
+  nav.performances-nav h1 a, nav.performances-nav .menu a {
+    color: inherit; } }
+
+div.marquee-container.performances-page-marquee {
+  background-image: url('../images/matt_aubin124-1.jpg'); }
+
 main.performances-page .container, .container.narrow {
   display: -webkit-box;
   display: -webkit-flex;
@@ -463,15 +424,14 @@ main.performances-page .container .col-1, main.performances-page .container .col
           flex: 1;
   width: 100%; }
 
-main.performances-page .container .col-1, .container.narrow .col-1 {
-  text-align: right; }
-
 @media screen and (min-width: 851px) {
   main.performances-page .container .col-1, .container.narrow .col-1 {
+    text-align: right;
     -webkit-box-flex: 1;
     -webkit-flex: 1;
         -ms-flex: 1;
-            flex: 1; } }
+            flex: 1;
+    margin-right: 4em; } }
 
 @media screen and (min-width: 851px) {
   main.performances-page .container .col-2, .container.narrow .col-2 {
