@@ -117,8 +117,7 @@ h3 {
   text-transform: uppercase; }
 
 main {
-  font-size: 0.75em;
-  letter-spacing: 0.75px;
+  line-height: 1.5em;
   font-family: 'proxima-nova', 'Open Sans', sans-serif;
   font-weight: 300; }
 
@@ -136,10 +135,11 @@ footer .credit {
   font-style: italic; }
 
 .drop-cap {
-  font-size: 3.25em;
+  font-size: 5.5em;
   float: left;
-  line-height: 40px;
-  margin-top: 4px; }
+  line-height: 50px;
+  margin-top: 12px;
+  margin-right: 4px; }
 
 .sm-caps {
   font-size: 0.75em; }
@@ -485,8 +485,21 @@ main.performances-page .container .little-block, .container.narrow .little-block
 .performance-info .performance-group h2 {
   padding-top: 0; }
 
+nav.contact-nav {
+  color: #FFFFFF; }
+
+@media screen and (min-width: 851px) {
+  nav.contact-nav h1 a, nav.contact-nav .menu a {
+    color: inherit; } }
+
+div.marquee-container.contact-page-marquee {
+  background-image: url('../images/matt_aubin143-1.jpg'); }
+
 main.contact-page .container.narrow {
-  max-width: 600px; }
+  max-width: 600px;
+  -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap; }
 
 main.contact-page form {
   width: 100%; }
@@ -504,3 +517,33 @@ main.contact-page form textarea {
 
 main.contact-page form input[type=text], main.contact-page form input[type=email], main.contact-page form textarea {
   padding: 0.5em 1em; }
+
+main.contact-page form input[type=submit] {
+  margin: 0 auto;
+  padding: 10px;
+  border: none;
+  width: 50%;
+  background-color: #F0B430; }
+
+main.contact-page form input[type=submit]:hover {
+  cursor: pointer; }
+
+main.contact-page #success, main.contact-page #error {
+  text-align: center; }
+
+nav.about-nav {
+  color: #FFFFFF; }
+
+@media screen and (min-width: 851px) {
+  nav.about-nav h1 a, nav.about-nav .menu a {
+    color: inherit; } }
+
+div.marquee-container.about-page-marquee {
+  background-image: url('../images/matt_aubin154-1.jpg'); }
+
+main.about-page .container.narrow {
+  max-width: 600px;
+  -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  line-height: 1.4em; }

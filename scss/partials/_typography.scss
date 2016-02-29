@@ -54,8 +54,9 @@ h3 {
 
 main {
   //font-size: 18px;
-  font-size: 0.75em;
-  letter-spacing: 0.75px;
+  //font-size: 0.75em;
+  //letter-spacing: 0.75px;
+  line-height: 1.5em;
   font-family: $body;
   font-weight: 300;
 }
@@ -77,15 +78,16 @@ footer .credit {
 }
 
 .drop-cap {
-  // font-size: 4.25em;
-  // float: left;
-  // line-height: 50px;
-  // margin-top: 12px;
+  font-size: 5.5em;
+  float: left;
+  line-height: 50px;
+  margin-top: 12px;
+  margin-right: 4px;
 
-  font-size: 3.25em;
-      float: left;
-      line-height: 40px;
-      margin-top: 4px;
+  // font-size: 3.25em;
+  //     float: left;
+  //     line-height: 40px;
+  //     margin-top: 4px;
 }
 
 .sm-caps {

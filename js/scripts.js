@@ -1,26 +1,28 @@
 $(document).ready(function() {
   // AJAX Form Handler
-  // $("#contact-form").validate({
-  //   submitHandler: function(form) {
-  //     $.ajax({
-  //       url: "//formspree.io/myemail@gmail.com",
-  //       method: "POST",
-  //       data: {
-  //         name: $(form).find("input[name='name']").val(),
-  //         message: $(form).find("input[name='message']").val(),
-  //         email: $(form).find("textarea[name='email']").val()
-  //       },
-  //       dataType: "json",
-  //       success: function() {
-  //         $("#contact-form").fadeOut();
-  //         $("#success").fadeIn;
-  //       },
-  //       error: function() {
-  //         $("#error").fadeIn;
-  //       }
-  //     });
-  //   }
-  // } // end .validate
+  $("#success").hide();
+  $("#error").hide();
+  $("#contact-form").validate({
+    submitHandler: function(form) {
+      $.ajax({
+        url: "//formspree.io/matthewhornblower@gmail.com",
+        method: "POST",
+        data: {
+          name: $(form).find("input[name='name']").val(),
+          message: $(form).find("input[name='message']").val(),
+          email: $(form).find("textarea[name='email']").val()
+        },
+        dataType: "json",
+        success: function() {
+          $("#contact-form").fadeOut();
+          $("#success").fadeIn();
+        },
+        error: function() {
+          $("#error").fadeIn();
+        }
+      });
+    }
+  }); // end .validate
 
   //Scroll-spy
   var controller = new ScrollMagic.Controller({loglevel: 3});
