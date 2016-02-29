@@ -36,16 +36,10 @@ main.performances-page .container, .container.narrow{
     }
   }
 
-
-
   .col-2 {
     @include respond-to(medium-plus) {
       flex: 2;
     }
-
-    // h2 {
-    //   text-align: center;
-    // }
   }
 
   .little-block {
@@ -58,13 +52,7 @@ main.performances-page .container, .container.narrow{
   }
 }
 
-// .container.narrow {
-//   //max-width: 700px;
 
-//   .col-1 {
-//     text-align: right;
-//   }
-// }
 
 
 
@@ -107,14 +95,3 @@ main.performances-page .container, .container.narrow{
   }
 }
 
-.performance-info {
-  .performance-date {
-
-  }
-
-  .performance-group {
-    h2 {
-      padding-top: 0;
-    }
-  }
-}

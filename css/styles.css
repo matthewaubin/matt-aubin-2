@@ -108,7 +108,6 @@ h2 {
   font-style: italic;
   font-size: 1.25em;
   line-height: 1.25em;
-  padding-top: 0.6em;
   font-weight: 400; }
 
 h3 {
@@ -481,9 +480,6 @@ main.performances-page .container .little-block, .container.narrow .little-block
             flex: 1;
     margin-right: 4em;
     max-width: 406px; } }
-
-.performance-info .performance-group h2 {
-  padding-top: 0; }
 
 nav.contact-nav {
   color: #FFFFFF; }
