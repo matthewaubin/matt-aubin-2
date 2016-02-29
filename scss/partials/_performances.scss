@@ -1,4 +1,4 @@
-main.performances-page .container{
+main.performances-page .container, .container.narrow{
   display: flex;
   flex-flow: column nowrap;
 
@@ -13,6 +13,7 @@ main.performances-page .container{
   }
 
   .col-1 {
+    text-align: right;
 
     @include respond-to(medium-plus) {
       flex: 1;
@@ -42,13 +43,13 @@ main.performances-page .container{
   }
 }
 
-.container.narrow {
-  //max-width: 700px;
+// .container.narrow {
+//   //max-width: 700px;
 
-  .col-1 {
-    text-align: right;
-  }
-}
+//   .col-1 {
+//     text-align: right;
+//   }
+// }
 
 
 

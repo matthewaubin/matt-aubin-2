@@ -52,34 +52,6 @@ div.marquee-container {
 }
 
 
-main.home-page .container {
-  flex-flow: column nowrap;
-
-  @include respond-to(medium-plus) {
-    flex-flow: row wrap;
-    max-width: 980px;
-  }
-
-  .col-1, .col-2 {
-    margin-bottom: 1em;
-    flex: 1;
-  }
-
-  .col-1 {
-
-    @include respond-to(medium-plus) {
-      flex: 3;
-      margin-right: 4em;
-    }
-  }
-
-  .col-2 {
-    @include respond-to(medium-plus) {
-      flex: 1;
-    }
-
-    h2 {
-      text-align: center;
-    }
-  }
+main.home-page {
+  padding-top: 100px;
 }
