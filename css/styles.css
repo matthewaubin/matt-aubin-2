@@ -292,15 +292,10 @@ div.marquee-container.home-page-marquee {
   background-image: url('../images/matt_aubin083-1.jpg'); }
 
 main.home-page .container.logos {
+  max-width: 700px;
   -webkit-flex-flow: column nowrap;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap; }
-
-@media screen and (min-width: 851px) {
-  main.home-page .container.logos {
-    -webkit-flex-flow: row nowrap;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap; } }
 
 @media screen and (min-width: 851px) {
   main.home-page .container.logos .fbd-logo {
@@ -320,6 +315,11 @@ main.home-page .container.logos .tcs-logo-container {
 @media screen and (min-width: 851px) {
   main.home-page .container.logos .tcs-logo-container {
     margin: 0 auto; } }
+
+@media screen and (min-width: 851px) {
+  main.home-page .container.logos .mitj {
+    width: 50%;
+    margin: auto; } }
 
 nav.video-nav {
   color: #FFFFFF; }

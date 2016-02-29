@@ -14,9 +14,10 @@ main.home-page {
   //padding-top: 100px;
 
   .container.logos {
+    max-width: 700px;
     flex-flow: column nowrap;
     @include respond-to(medium-plus) {
-      flex-flow: row nowrap;
+      //flex-flow: row nowrap;
     }
 
     .fbd-logo {
@@ -31,7 +32,12 @@ main.home-page {
       @include respond-to(medium-plus) {
         margin: 0 auto;
       }
-
+    }
+    .mitj {
+      @include respond-to(medium-plus) {
+        width: 50%;
+        margin: auto;
+      }
     }
   }
 }
