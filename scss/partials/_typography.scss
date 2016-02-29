@@ -61,6 +61,10 @@ main {
   font-weight: 300;
 }
 
+input {
+  font-family: $body;
+}
+
 nav .menu {
   font-size: 0.93em; //16.8px = 0.93
   font-family: $display;

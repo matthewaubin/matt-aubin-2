@@ -9,13 +9,14 @@ nav.contact-nav h1 a, nav.contact-nav .menu a {
 }
 
 div.marquee-container.contact-page-marquee {
-  background-image: url('../images/matt_aubin143-1.jpg');
+  background-image: url('../images/matt_aubin015-1.jpg'); // was 143-1
 }
 
 main.contact-page {
   .container.narrow {
     max-width: 600px;
     flex-flow: column nowrap;
+    margin: auto;
   }
   form {
     width: 100%;
@@ -41,8 +42,10 @@ main.contact-page {
       margin: 0 auto;
       padding: 10px;
       border: none;
+      border-radius: 2px;
       width: 50%;
       background-color: $secondary-color;
+      font-weight: bold;
 
       &:hover {
         cursor: pointer;
@@ -53,5 +56,10 @@ main.contact-page {
 
   #success, #error {
     text-align: center;
+  }
+
+  .site-credit {
+    margin: 3em 0 1em;
+    font-size: 0.75em;
   }
 }

@@ -20,6 +20,10 @@ main.home-page {
       //flex-flow: row nowrap;
     }
 
+     > div {
+      margin-bottom: 2em;
+     }
+
     .fbd-logo {
       @include respond-to(medium-plus) {
         flex: 4;
@@ -28,7 +32,7 @@ main.home-page {
     .tcs-logo-container {
       flex: 1;
       margin: 0 auto;
-      width: 30%;
+      width: 80%;
       @include respond-to(medium-plus) {
         margin: 0 auto;
       }

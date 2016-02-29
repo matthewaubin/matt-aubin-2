@@ -69,6 +69,9 @@ main {
   main {
     padding-top: 10px; } }
 
+main a {
+  color: #ff003b; }
+
 main > .container {
   margin: 0 22px; }
 
@@ -119,6 +122,9 @@ main {
   line-height: 1.5em;
   font-family: 'proxima-nova', 'Open Sans', sans-serif;
   font-weight: 300; }
+
+input {
+  font-family: 'proxima-nova', 'Open Sans', sans-serif; }
 
 nav .menu {
   font-size: 0.93em;
@@ -246,7 +252,7 @@ div.marquee-container {
     min-height: 550px; } }
 
 main .container {
-  padding-bottom: 1em; }
+  padding-bottom: 2em; }
 
 footer {
   background-color: #F0B430;
@@ -297,6 +303,9 @@ main.home-page .container.logos {
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap; }
 
+main.home-page .container.logos > div {
+  margin-bottom: 2em; }
+
 @media screen and (min-width: 851px) {
   main.home-page .container.logos .fbd-logo {
     -webkit-box-flex: 4;
@@ -310,7 +319,7 @@ main.home-page .container.logos .tcs-logo-container {
       -ms-flex: 1;
           flex: 1;
   margin: 0 auto;
-  width: 30%; }
+  width: 80%; }
 
 @media screen and (min-width: 851px) {
   main.home-page .container.logos .tcs-logo-container {
@@ -489,13 +498,14 @@ nav.contact-nav {
     color: inherit; } }
 
 div.marquee-container.contact-page-marquee {
-  background-image: url('../images/matt_aubin143-1.jpg'); }
+  background-image: url('../images/matt_aubin015-1.jpg'); }
 
 main.contact-page .container.narrow {
   max-width: 600px;
   -webkit-flex-flow: column nowrap;
       -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap; }
+          flex-flow: column nowrap;
+  margin: auto; }
 
 main.contact-page form {
   width: 100%; }
@@ -518,14 +528,20 @@ main.contact-page form input[type=submit] {
   margin: 0 auto;
   padding: 10px;
   border: none;
+  border-radius: 2px;
   width: 50%;
-  background-color: #F0B430; }
+  background-color: #F0B430;
+  font-weight: bold; }
 
 main.contact-page form input[type=submit]:hover {
   cursor: pointer; }
 
 main.contact-page #success, main.contact-page #error {
   text-align: center; }
+
+main.contact-page .site-credit {
+  margin: 3em 0 1em;
+  font-size: 0.75em; }
 
 nav.about-nav {
   color: #FFFFFF; }
@@ -535,11 +551,12 @@ nav.about-nav {
     color: inherit; } }
 
 div.marquee-container.about-page-marquee {
-  background-image: url('../images/matt_aubin154-1.jpg'); }
+  background-image: url('../images/matt_aubin154-2.jpg'); }
 
 main.about-page .container.narrow {
   max-width: 600px;
   -webkit-flex-flow: column nowrap;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  line-height: 1.4em; }
+  line-height: 1.4em;
+  margin: auto; }
