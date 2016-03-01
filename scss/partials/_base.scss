@@ -20,12 +20,13 @@ a {
 }
 
 main {
-  min-height: 81vh;
+
   display: block;
   //margin-bottom: 23px;
 
   @include respond-to(medium-plus) {
     padding-top: 10px;
+    min-height: 81vh;
   }
 
   a {

@@ -29,7 +29,10 @@ main h1 {
   font-family: $display;
   text-transform: uppercase;
   letter-spacing: 3px;
-  margin: 3em auto 3em;
+  margin: 1.5em auto 1em;
+  @include respond-to(medium-plus) {
+    margin: 3em auto 3em;
+  }
   //font-style: italic;
   // font-weight: 400;
   //font-weight: 600;

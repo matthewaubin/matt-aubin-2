@@ -62,12 +62,12 @@ a:hover {
   color: gray; }
 
 main {
-  min-height: 81vh;
   display: block; }
 
 @media screen and (min-width: 851px) {
   main {
-    padding-top: 10px; } }
+    padding-top: 10px;
+    min-height: 81vh; } }
 
 main a {
   color: #ff003b; }
@@ -104,7 +104,11 @@ main h1 {
   font-family: 'ltc-bodoni-175', serif;
   text-transform: uppercase;
   letter-spacing: 3px;
-  margin: 3em auto 3em; }
+  margin: 1.5em auto 1em; }
+
+@media screen and (min-width: 851px) {
+  main h1 {
+    margin: 3em auto 3em; } }
 
 h2 {
   font-family: 'proxima-nova', 'Open Sans', sans-serif;
@@ -251,12 +255,10 @@ div.marquee-container {
   div.marquee-container {
     min-height: 550px; } }
 
-main .container {
-  padding-bottom: 2em; }
-
 footer {
   background-color: #F0B430;
   color: #000000;
+  margin-top: 2em;
   padding: 0.5em 0; }
 
 footer .container {
@@ -298,10 +300,13 @@ div.marquee-container.home-page-marquee {
   background-image: url('../images/matt_aubin083-1.jpg'); }
 
 main.home-page .container.logos {
-  max-width: 700px;
   -webkit-flex-flow: column nowrap;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap; }
+
+@media screen and (min-width: 851px) {
+  main.home-page .container.logos {
+    max-width: 700px; } }
 
 main.home-page .container.logos > div {
   margin-bottom: 2em; }
@@ -515,7 +520,9 @@ main.contact-page form > * {
   width: 100%; }
 
 main.contact-page form input {
-  margin-bottom: 2em; }
+  margin-bottom: 2em;
+  -webkit-appearance: none;
+  -moz-appearance: none; }
 
 main.contact-page form textarea {
   margin: 0 0 2em 0;

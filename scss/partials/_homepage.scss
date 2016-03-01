@@ -14,10 +14,10 @@ main.home-page {
   //padding-top: 100px;
 
   .container.logos {
-    max-width: 700px;
+
     flex-flow: column nowrap;
     @include respond-to(medium-plus) {
-      //flex-flow: row nowrap;
+      max-width: 700px;
     }
 
      > div {
