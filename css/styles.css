@@ -104,7 +104,8 @@ main h1 {
   font-family: 'ltc-bodoni-175', serif;
   text-transform: uppercase;
   letter-spacing: 3px;
-  margin: 1.5em auto 1em; }
+  margin: 1.5em auto 1em;
+  text-align: center; }
 
 @media screen and (min-width: 851px) {
   main h1 {
@@ -421,13 +422,21 @@ main.performances-page .container, .container.narrow {
   display: flex;
   -webkit-flex-flow: column nowrap;
       -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap; }
+          flex-flow: column nowrap;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  max-width: 550px;
+  margin: auto; }
 
 @media screen and (min-width: 851px) {
   main.performances-page .container, .container.narrow {
     -webkit-flex-flow: row nowrap;
         -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap; } }
+            flex-flow: row nowrap;
+    max-width: 980px;
+    margin: none; } }
 
 main.performances-page .container .col-1, main.performances-page .container .col-2, .container.narrow .col-1, .container.narrow .col-2 {
   margin-bottom: 1em;
@@ -534,9 +543,10 @@ main.contact-page form input[type=text], main.contact-page form input[type=email
 main.contact-page form input[type=submit] {
   margin: 0 auto;
   padding: 10px;
+  font-size: 1em;
   border: none;
   border-radius: 2px;
-  width: 50%;
+  width: 150px;
   background-color: #F0B430;
   font-weight: bold; }
 

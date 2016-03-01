@@ -30,6 +30,7 @@ main h1 {
   text-transform: uppercase;
   letter-spacing: 3px;
   margin: 1.5em auto 1em;
+  text-align: center;
   @include respond-to(medium-plus) {
     margin: 3em auto 3em;
   }

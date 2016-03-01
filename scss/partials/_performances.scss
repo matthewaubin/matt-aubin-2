@@ -15,9 +15,15 @@ div.marquee-container.performances-page-marquee {
 main.performances-page .container, .container.narrow{
   display: flex;
   flex-flow: column nowrap;
+  align-items: baseline;
+  max-width: 550px;
+  //align-items: center;
+  margin: auto;
 
   @include respond-to(medium-plus) {
     flex-flow: row nowrap;
+    max-width: $max-container-width;
+    margin: none;
   }
 
   .col-1, .col-2 {
@@ -27,8 +33,6 @@ main.performances-page .container, .container.narrow{
   }
 
   .col-1 {
-
-
     @include respond-to(medium-plus) {
       text-align: right;
       flex: 1;
